@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Iconfont Preview</title>
+    <link rel="stylesheet" type="text/css" href="css/Test.css">
+    <style>
+    	i {
+			color: black;
+    	}
+        input, h2 {
+            margin: 5px;
+            display: block;
+        }
+        .container {
+            display: inline-block;
+            border-style: groove;
+            height: 150px;
+            width: 30%;
+            min-width: 450px;
+            margin: 5px;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .outer {
+            margin: auto;
+            width: 100%;
+        }
+        .ts {
+            font-size: 80px;
+        }
+        @media screen and (max-width: 1500px) {
+            .container {
+                width: 45%;
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            .container {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="outer">
+    <h2>ts ts fontSize</h2>
+    <input type="range" onchange="setSize(this.value)" min="10" max="100">
+
+    <h2>ts ts fontColor</h2>
+    <input type="range" onchange="setColor(this.value)" min="0" max="16777215">
+    <div class="container"><i class="ts ts-icons8">Test</i><br>&#x3C;i class="ts ts-icons8"&#x3E;Test&#x3C;/i&#x3E</div> 
+</div>
+<script>
+    var icons = document.querySelectorAll("i");
+
+    function setSize (fontSize) {
+        for (var i = 0; i < icons.length; i++) {
+            icons[i].style.fontSize = fontSize + 'px';
+        }
+    }
+
+    function setColor (fontColor) {
+        var color = colorFormat(fontColor);
+
+        for (var i = 0; i < icons.length; i++) {
+            icons[i].style.color = color;
+        }
+    }
+
+    function colorFormat (number) {
+        return "#" + ((~~number).toString(16) + "0000000").slice(0,6);
+    }
+</script>
+</body>
+</html>

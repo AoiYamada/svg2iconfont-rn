@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Test";
+  src: url('../fonts/Test.eot');
+  src: url('../fonts/Test.eot?#iefix') format('eot'),
+    /*url('../fonts/Test.woff2') format('woff2'),*/
+    url('../fonts/Test.woff') format('woff'),
+    url('../fonts/Test.ttf') format('truetype'),
+    url('../fonts/Test.svg#Test') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ts:before {
+  display: inline-block;
+  font-family: "Test";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ts-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.ts-2x { font-size: 2em; }
+.ts-3x { font-size: 3em; }
+.ts-4x { font-size: 4em; }
+.ts-5x { font-size: 5em; }
+.ts-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.ts-icons8:before { content: "\EA01" }

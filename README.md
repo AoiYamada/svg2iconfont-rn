@@ -5,7 +5,7 @@ A collection of font icoins of projects.
 
 ### Installation
 ```
-npm i git+https://github.com/AoiYamada/svg2iconfont.git
+npm i git+https://github.com/AoiYamada/svg2iconfont-rn.git
 ```
 
 ### Use In Web
@@ -62,4 +62,4 @@ The icon is downloaded from [icons8](https://icons8.com)
 ```
 
 ### About gyp error
-There is a hard time when I install and build the module ttf2woff2, so I zipped this module(OS Win7 64bit) as attachment in */attachment/ttf2woff2.rar*.
+There was a hard time when I install and build the module ttf2woff2, so I zipped this module(OS Win7 64bit) as attachment in */attachment/ttf2woff2.rar*.

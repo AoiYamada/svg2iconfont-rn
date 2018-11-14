@@ -5,7 +5,7 @@ A collection of font icoins of projects.
 
 ### Installation
 ```
-npm i git+https://github.com/AoiYamada/svg2iconfont-rn.git
+npm i svg2iconfont-rn --save
 ```
 
 ### Use In Web

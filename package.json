@@ -1,8 +1,9 @@
 {
   "name": "svg2iconfont-rn",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "svg2iconfont",
   "main": "index.js",
+  "homepage": "https://github.com/AoiYamada/svg2iconfont-rn",
   "scripts": {
     "test": "no command"
   },
@@ -12,7 +13,6 @@
   "author": "Yamada246",
   "license": "MIT",
   "dependencies": {
-    "ttf2woff2": "^2.0.3"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

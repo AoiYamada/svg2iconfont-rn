@@ -39,29 +39,27 @@ import { Test } from "svg2iconfont/react-native";
 The icon is downloaded from [icons8](https://icons8.com)
 
 ### Develop
-1. Clone this repo
-2. 
-  ```
-  npm i --dev
-  ```
-2. Place your svg icons in
-  ```
-  /svg/{fontName}
-  ```
-3. 
-  ```sh
-  gulp --fontName {fontName} --className {className} --fontPath {fontPath}
-  ```
-  for example:
-  ```
-  gulp --fontName test --className ts --fontPath "../fonts/"
-  ```
-4. Add the font to */react-native/index.js* if you want
+1.  Clone this repo
+2.  ```
+    npm i --dev
+    ```
+2.  Place your svg icons in
+    ```
+    /svg/{fontName}
+    ```
+3.  ```sh
+    gulp --fontName {fontName} --className {className} --fontPath {fontPath}
+    ```
+    for example:
+    ```
+    gulp --fontName test --className ts --fontPath "../fonts/"
+    ```
+4.  Add the font to */react-native/index.js* if you want
 
 ### Preview
 ```
 /dest/index.html
 ```
 
-### gyp error
+### About gyp error
 There is a hard time when I install and build the module ttf2woff2, so I zipped this module(OS Win7 64bit) as attachment in */attachment/ttf2woff2.rar*.
